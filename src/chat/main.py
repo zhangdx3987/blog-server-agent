@@ -7,7 +7,7 @@ def create_app() -> FastAPI:
     settings = get_settings()
 
     app = FastAPI(
-        title="Blog Server Agent",
+        title=settings.app_name,
         description="提供模型调用、会话管理和工具执行能力",
         version="0.1.0"
     )
